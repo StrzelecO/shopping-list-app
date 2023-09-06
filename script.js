@@ -31,7 +31,6 @@ const prepareDOMElements = () => {
 	newProductPanel = document.querySelector('.new-product-panel');
 	info = document.querySelector('.info');
 	ulList = document.querySelector('ul');
-	allProducts = document.querySelectorAll('.product-name');
 
 	nameInput = document.querySelector('.name');
 	categoryInput = document.querySelector('.category');
@@ -128,6 +127,7 @@ const removeAllProducts = () => {
 };
 
 const searchProduct = () => {
+	const allProducts = document.querySelectorAll('.product-name');
 	allProducts.forEach(p => {
 		const match = new RegExp(searchInput.value, 'i').test(p.textContent);
 
