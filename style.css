@@ -129,9 +129,9 @@ body {
 	cursor: pointer;
 }
 
-.fa-check:hover {
+.active:hover {
 	scale: 1.2;
-	color: rgb(52, 180, 52);
+	color: rgb(40, 145, 40);
 }
 
 .fa-xmark:hover {
@@ -205,6 +205,14 @@ body {
 }
 .icon-name {
 	display: flex;
+}
+
+.checked {
+	text-decoration: line-through;
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(40, 145, 40);
+	font-size: 16px;
 }
 
 @media (min-width: 375px) {
