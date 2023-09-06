@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0a5509da71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="shadow"></div>
+            <h1>Shopping list</h1>
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-trash-can-arrow-up"></i>
+            <input type="text" placeholder="search product...">
+        </div>
+        <div class="new-product-panel">
+            <h2>Add new product to your shopping list</h2>
+            <input type="text" placeholder="product name...">
+
+            <select class="category">
+                <option value="0" selected disabled> - choose category -</option>
+                <option value="food and drink">food and drink</option>
+                <option value="clothes and shoes">clothes and shoes</option>
+                <option value="hygiene">hygiene</option>
+                <option value="electronics">electronics</option>
+                <option value="entertainment">entertainment</option>
+                <option value="other">other</option>
+            </select>
+
+            <div class="panel-btns">
+                <button class="add-new">add product</button>
+                <button class="close">close</button>
+            </div>
+        </div>
+        <div class="products-list">
+            <ul>
+                <li>
+                    <p class="product-name"><i class="fa-solid fa-utensils"></i> - Milk</p>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p class="product-name"><i class="fa-solid fa-socks"></i> - Dress</p>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p class="product-name"><i class="fa-solid fa-pump-soap"></i> - Tooth brush</p>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p class="product-name"><i class="fa-solid fa-plug"></i> - TV</p>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p class="product-name"><i class="fa-solid fa-music"></i> - Cinema</p>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p class="product-name"><i class="fa-solid fa-money-bill"></i> - Hairdresser</p>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
