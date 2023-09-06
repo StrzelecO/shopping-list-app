@@ -19,11 +19,11 @@
             <h1>Shopping list</h1>
             <i class="fa-solid fa-plus"></i>
             <i class="fa-solid fa-trash-can-arrow-up"></i>
-            <input type="text" placeholder="search product...">
+            <input class="searchEngine" type="text" placeholder="search product...">
         </div>
         <div class="new-product-panel">
             <h2>Add new product to your shopping list</h2>
-            <input type="text" placeholder="product name...">
+            <input type="text" class="name" placeholder="product name...">
 
             <select class="category">
                 <option value="0" selected disabled> - choose category -</option>
@@ -41,44 +41,64 @@
             </div>
         </div>
         <div class="products-list">
+            <p class="info"></p>
             <ul>
                 <li>
-                    <p class="product-name"><i class="fa-solid fa-utensils"></i> - Milk</p>
+                    <div class="icon-name">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p class="product-name"> - milk</p>
+                    </div>
                     <div class="product-btns">
                         <button><i class="fa-solid fa-check"></i></button>
                         <button><i class="fa-solid fa-xmark"></i></button>
                     </div>
                 </li>
                 <li>
-                    <p class="product-name"><i class="fa-solid fa-socks"></i> - Dress</p>
+                    <div class="icon-name">
+                        <i class="fa-solid fa-socks"></i>
+                        <p class="product-name"> - dress</p>
+                    </div>
+                    <div class="product-btns">
+                        <button><i class="fa-solid fa-check"></i></button>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon-name">
+                        <i class="fa-solid fa-pump-soap"></i>
+                        <p class="product-name"> - tooth brush</p>
+                    </div>
                     <div class="product-btns">
                         <button><i class="fa-solid fa-check"></i></button>
                         <button><i class="fa-solid fa-xmark"></i></button>
                     </div>
                 </li>
                 <li>
-                    <p class="product-name"><i class="fa-solid fa-pump-soap"></i> - Tooth brush</p>
+                    <div class="icon-name">
+                        <i class="fa-solid fa-plug"></i>
+                        <p class="product-name"> - Tv</p>
+                    </div>
                     <div class="product-btns">
                         <button><i class="fa-solid fa-check"></i></button>
                         <button><i class="fa-solid fa-xmark"></i></button>
                     </div>
                 </li>
                 <li>
-                    <p class="product-name"><i class="fa-solid fa-plug"></i> - TV</p>
+                    <div class="icon-name">
+                        <i class="fa-solid fa-music"></i>
+                        <p class="product-name"> - cinema</p>
+                    </div>
                     <div class="product-btns">
                         <button><i class="fa-solid fa-check"></i></button>
                         <button><i class="fa-solid fa-xmark"></i></button>
                     </div>
                 </li>
                 <li>
-                    <p class="product-name"><i class="fa-solid fa-music"></i> - Cinema</p>
-                    <div class="product-btns">
-                        <button><i class="fa-solid fa-check"></i></button>
-                        <button><i class="fa-solid fa-xmark"></i></button>
+                    <div class="icon-name">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <p class="product-name"> - hairdresser</p>
                     </div>
-                </li>
-                <li>
-                    <p class="product-name"><i class="fa-solid fa-money-bill"></i> - Hairdresser</p>
                     <div class="product-btns">
                         <button><i class="fa-solid fa-check"></i></button>
                         <button><i class="fa-solid fa-xmark"></i></button>

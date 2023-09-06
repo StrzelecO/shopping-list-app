@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--light-color: #cfcfcf;
+	--dark-color: #222;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	min-width: 280px;
+	font-family: 'Nunito', sans-serif;
+	background-color: var(--dark-color);
+}
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	max-width: 600px;
+	background-color: var(--light-color);
+	border: 1px solid var(--dark-color);
+	box-shadow: 0 0 30px var(--light-color);
+	overflow: auto;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 25%;
+	background-image: url('./money.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.header h1 {
+	font-size: 28px;
+	padding: 10px 20px;
+	color: var(--light-color);
+}
+
+.header i {
+	position: absolute;
+	top: 8px;
+	padding: 10px;
+	font-size: 24px;
+	color: var(--light-color);
+	cursor: pointer;
+	transition: scale 0.3s;
+}
+
+.header i:hover {
+	scale: 0.9;
+}
+
+.fa-plus {
+	right: 45px;
+}
+
+.fa-trash-can-arrow-up {
+	right: 8px;
+}
+
+.fa-plus:hover {
+	color: rgb(121, 206, 121);
+}
+
+.fa-trash-can-arrow-up:hover {
+	color: tomato;
+}
+
+.header input {
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	padding: 10px 20px;
+	margin: 20px;
+	font-size: 16px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.products-list {
+	margin-top: 20px;
+	padding: 20px;
+	height: auto;
+	background-color: var(--light-color);
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.products-list li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	font-size: 16px;
+	border-top: 1px solid var(--dark-color);
+}
+
+.products-list li i {
+	font-size: 16px;
+	padding: 0 5px;
+	transition: color 0.3s, scale 0.3s;
+}
+
+.product-btns button {
+	padding: 5px 10px;
+	border: none;
+	background-color: var(--light-color);
+	cursor: pointer;
+}
+
+.fa-check:hover {
+	scale: 1.2;
+	color: rgb(52, 180, 52);
+}
+
+.fa-xmark:hover {
+	scale: 1.2;
+	color: tomato;
+}
+
+.new-product-panel {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 600px;
+	height: 45%;
+	max-height: 300px;
+	background-color: var(--light-color);
+}
+
+.new-product-panel h2 {
+	margin: 20px 0px;
+	font-size: 24px;
+	text-align: center;
+	color: var(--dark-color);
+}
+
+.new-product-panel input,
+.new-product-panel .category,
+.new-product-panel button {
+	width: 70%;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid var(--dark-color);
+}
+
+.new-product-panel input,
+.new-product-panel .category {
+	text-align: center;
+	color: var(--dark-color);
+}
+
+.new-product-panel button {
+	text-transform: uppercase;
+	color: var(--light-color);
+	background-color: var(--dark-color);
+	cursor: pointer;
+	transition: box-shadow 0.3s;
+}
+
+.new-product-panel button:hover {
+	box-shadow: 0 0 10px var(--dark-color);
+}
+
+.panel-btns {
+	display: flex;
+	width: 70%;
+}
+
+.add-new {
+	margin-right: 10px;
+}
+
+.info {
+	text-align: center;
+	font-size: 20px;
+}
+.icon-name {
+	display: flex;
+}
+
+@media (min-width: 375px) {
+	.header h1 {
+		font-size: 32px;
+	}
+
+	.header i {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+	.header h1 {
+		font-size: 42px;
+	}
+
+	.header i {
+		font-size: 34px;
+	}
+	.products-list {
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+
+	.products-list li {
+		font-size: 18px;
+	}
+
+	.products-list li i {
+		font-size: 18px;
+	}
+	.wrapper {
+		margin: 40px;
+		border-radius: 8px;
+	}
+}
+
+@media (min-height: 700px) {
+	.new-product-panel {
+		height: 40%;
+	}
+}
+
+@media (min-height: 800px) {
+	.new-product-panel {
+		height: 30%;
+	}
+}
